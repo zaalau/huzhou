@@ -1,0 +1,40 @@
+<!--pages/map/index.wxml-->
+<view class="mapContainer" style=" height: {{mapContainerHeight}}px;">
+	<view class="topTab">
+		<view class="carTab" bindtap='showCar' style="border-bottom: {{car? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{car? '#fff' : '#ffffff90'}};">交通信息</view>
+		<view class="dinnerTab" bindtap='showDinner' style="border-bottom: {{dinner? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{dinner? '#fff' : '#ffffff90'}};">用餐信息</view>
+		<view class="placeTab" bindtap='showPlace' style="border-bottom: {{place? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{place? '#fff' : '#ffffff90'}};">会场图</view>
+	</view> 
+
+	<view class="contentContainer" wx:if="{{car}}">
+		<view class="car" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG75.jpg?sign=4b31dacc6a7ec7d746d85781334dc665&t=1697875920');">
+		</view>
+	</view>
+	<view class="contentContainer2" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG78.jpg?sign=a0d16de5a3791e1515a5592e5060c670&t=1697879625');" wx:if="{{dinner}}">
+
+		<view class="dinner">
+			<view class="sevenContainer" wx:for="{{dinnerContent}}" wx:for-item="item" wx:for-index='index' wx:key="index">
+				<view class="title" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG77.jpg?sign=c4874d1c01b076f119b3292d18e5977a&t=1697878213');">{{item.title}}</view>
+				<view wx:for="{{item.timeAndPositon}}" wx:for-item="timeItem" wx:for-index='timeIndex' wx:key="timeIndex">
+					<view class="starAndTime">
+						<image class="star" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG79.jpg?sign=df14301b116b9542a9d01b279a6e85c7&t=1697878070" mode="" />
+						<view class="timeTitle">{{timeItem.timeTitle}}</view>
+					</view>
+					<view class="text" wx:for="{{timeItem.text}}" wx:for-item="textItem" wx:for-index='textIndex' wx:key="textIndex">{{textItem.text}}</view>
+
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="contentContainer3" wx:if="{{place}}" >
+		
+			<view class="picTitle">主会场平面图</view>
+			<image class="pic1" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG98.jpg?sign=27dad55096305c1eb26114f0ebb45dad&t=1697977846" mode=""/>
+			<view class="picTitle">分会场平面图</view>
+			<image class="pic2" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG2743.jpg?sign=1636b6d87d661daf88902a353afef0d5&t=1697977824" mode=""/>
+	
+
+	</view>
+
+
+</view>

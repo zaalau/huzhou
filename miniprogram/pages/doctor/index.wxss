@@ -1,0 +1,69 @@
+/* pages/doctor/index.wxss */ 
+.doctorContainer {
+	background-color: #1c319c;
+	color: #fff;
+}
+
+.topTab {
+	display: flex;
+	align-items: center;
+	height: 160rpx;
+	background-color: #1c319c;
+	font-family: "阿";
+	font-size: 55rpx;
+}
+.confTab {
+	margin-left: 70rpx;
+	box-sizing: border-box;
+	border-bottom: 3px solid rgba(4, 255, 25, 0);
+
+}
+.topicTab {
+	margin-left: 80rpx;
+
+	border-bottom: 3px solid rgb(255, 255, 255);
+
+}
+.contentContainer {
+	background-color: #fff;
+	border-radius: 39rpx;
+	padding: 0rpx 25rpx 100rpx; 
+	box-sizing: border-box;
+}
+
+.contentContainer2 {
+	background-color: #fff;
+	border-radius: 39rpx;
+	padding: 40rpx 25rpx 40rpx; 
+	box-sizing: border-box;
+	color: black;
+	font-family: "阿";
+	min-height: 1290rpx;
+}
+
+
+
+.topicPic {
+	width: 100%;
+	height: 2632rpx;
+}
+.expendAndTitle {
+	display: flex;
+	align-items: center;
+	font-size: 38rpx;
+	padding: 50rpx 0 35rpx;
+}
+.expend {
+	margin-right: 10rpx;
+}
+.title {
+	background: linear-gradient(to bottom,#3368c7,#0bb7fd);
+	height: 57rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25rpx;
+	color: #fff;
+	padding: 0 68rpx;
+	box-sizing: border-box;
+}

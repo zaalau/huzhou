@@ -1,0 +1,61 @@
+/* pages/sale/index.wxss */
+.saleContainer {
+	background-color: #1c319c;
+	color: #fff;
+}
+
+.topTab {
+	display: flex;
+	align-items: center;
+	height: 160rpx;
+	background-color: #1c319c;
+	font-family: "阿";
+	font-size: 55rpx;
+}
+.listTab {
+	margin-left: 115rpx;
+	box-sizing: border-box;
+	border-bottom: 3px solid rgba(4, 255, 25, 0);
+
+}
+.picTab {
+	margin-left: 140rpx;
+
+	border-bottom: 3px solid rgb(255, 255, 255);
+
+}
+.contentContainer {
+	background-color: #fff;
+	border-radius: 39rpx;
+	padding: 0rpx 25rpx 100rpx; 
+	box-sizing: border-box;
+}
+
+.contentContainer2 {
+	background-color: #fff;
+	border-radius: 39rpx;
+	padding: 40rpx 25rpx 40rpx; 
+	box-sizing: border-box;
+	color: black;
+	font-family: "阿";
+}
+.pic1 {
+	width: 100%;
+	height: 663rpx;
+	margin-bottom: 20rpx;
+}
+.pic2 {
+	width: 100%;
+	height: 1307rpx;
+	margin-bottom: 20rpx;
+}
+.pic3 {
+	width: 100%;
+	height: 240rpx;
+	margin-bottom: 20rpx;
+}
+.picTitle {
+	font-size: 40rpx;
+	margin-bottom: 30rpx;
+	margin-left: 40rpx;
+}

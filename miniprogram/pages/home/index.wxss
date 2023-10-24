@@ -1,0 +1,80 @@
+/* pages/home/index.wxss */
+.homeContainer {
+	background-size: 100% 100%;
+
+}
+.info {
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 70rpx;
+	box-sizing: border-box;
+	font-size: 48rpx;
+	font-family: "阿";
+	color: #fff;
+	height: 160rpx;
+	width: 650rpx;
+	border-radius: 30rpx;
+	margin-left: 40rpx;
+	margin-top: 275rpx;
+	margin-bottom: 75rpx;
+}
+.doc {
+	background-size: 100% 100%;
+	padding-left: 70rpx;
+	box-sizing: border-box;
+	font-size: 48rpx;
+	font-family: "阿";
+	color: #fff;
+	display: flex;
+	align-items: center;
+	height: 160rpx;
+	width: 650rpx;
+	border-radius: 30rpx;
+	margin-left: 40rpx;
+	margin-bottom: 75rpx;
+}
+.sale {
+	background-size: 100% 100%;
+	padding-left: 70rpx;
+	box-sizing: border-box;
+	font-size: 48rpx;
+	font-family: "阿";
+	color: #fff;
+	display: flex;
+	align-items: center;
+	height: 160rpx;
+	width: 650rpx;
+	border-radius: 30rpx;
+	margin-left: 40rpx;
+	margin-bottom: 75rpx;
+}
+.map {
+	background-size: 100% 100%;
+	padding-left: 70rpx;
+	box-sizing: border-box;
+	font-size: 48rpx;
+	font-family: "阿";
+	color: #fff;
+	display: flex;
+	align-items: center;
+	height: 160rpx;
+	width: 650rpx;
+	border-radius: 30rpx;
+	margin-left: 40rpx;
+	margin-bottom: 75rpx;
+}
+.live {
+	background-size: 100% 100%;
+	padding-left: 70rpx;
+	box-sizing: border-box;
+	font-size: 48rpx;
+	font-family: "阿";
+	color: #fff;
+	display: flex;
+	align-items: center;
+	height: 160rpx;
+	width: 650rpx;
+	border-radius: 30rpx;
+	margin-left: 40rpx;
+}

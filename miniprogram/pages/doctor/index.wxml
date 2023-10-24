@@ -1,0 +1,28 @@
+<!--pages/doctor/index.wxml-->
+<view class="doctorContainer" style=" height: {{doctorContainerHeight}}px;">
+
+	<view class="topTab">
+		<view class="confTab" bindtap='showConf' style="border-bottom: {{conf? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{conf? '#fff' : '#ffffff90'}};">大会报告人</view>
+		<view class="topicTab" bindtap='showTopic' style="border-bottom: {{!conf? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{!conf? '#fff' : '#ffffff90'}};">专题报告人</view>
+	</view>
+
+	<view class="contentContainer" wx:if="{{conf}}">
+		<view class="conf">
+			
+		</view>
+
+	</view>
+ 
+	<view class="contentContainer2" wx:if="{{!conf}}">
+		<view class="topic" wx:for="{{topicContent}}" wx:for-item="item" wx:for-index='index' wx:key="index">
+			<view class="expendAndTitle" bindtap="ifExpend" data-expend="{{item.expend}}" data-index="{{index}}">
+					<view class="expend">{{item.expend? '-' : '+'}}</view>
+					<view class="title">{{item.title}}</view>
+			</view>
+			<image class="topicPic" wx:if="{{item.expend}}" src="{{item.picSrc}}" mode=""/>
+			
+		</view>
+		
+	</view>
+
+</view>

@@ -1,0 +1,41 @@
+<!--pages/information/index.wxml-->
+<view class="infoContainer" style=" height: {{infoContainerHeight}}px;">
+	<view class="topTab">
+		<view class="scheduleTab" bindtap='showSchedule' style="border-bottom: {{schedule? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{schedule? '#fff' : '#ffffff90'}};">会议日程</view>
+		<view class="organizationTab" bindtap='showOrganization' style="border-bottom: {{!schedule? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{!schedule? '#fff' : '#ffffff90'}};">组织机构</view>
+	</view>
+
+	<view class="contentContainer">
+		<view class="schedule" wx:if="{{schedule}}"></view>
+
+		<view class="organization" wx:if="{{!schedule}}">
+
+			<view class="organizationContent" wx:for="{{organizationContent}}" wx:for-item="item" wx:for-index='index' wx:key="index">
+				<view class="expendAndTitle" bindtap="ifExpend" data-expend="{{item.expend}}" data-index="{{index}}">
+					<view class="expend">{{item.expend? '-' : '+'}}</view>
+					<view class="title">{{item.title}}</view>
+				</view>
+				<view class="organizationText" wx:if="{{item.expend && item.type==='blue'}}" wx:for="{{item.text}}" wx:for-item="textItem" wx:for-index='textIndex' wx:key="textIndex">
+					<view class="blackText">{{textItem.text}}</view>
+					<view class="blueText">{{textItem.text2}}</view>
+				</view>
+				<view class="organizationText" wx:if="{{item.expend && item.type==='black'}}" wx:for="{{item.text}}" wx:for-item="textItem" wx:for-index='textIndex' wx:key="textIndex">
+					<view class="blackText">{{textItem.text}}</view>
+					
+				</view>
+				
+			</view>
+			<!-- <view class="organizationContent">
+				<view class="expendAndTitle" bindtap="ifExpend">
+					<view class="expend">{{expend? '-' : '+'}}</view>
+					<view class="title">主办单位</view>
+				</view>
+				<view class="organizationText" wx:if='{{expend}}'>中国自动化学会、湖州市人民政府</view>
+			</view> -->
+
+		</view>
+
+	</view>
+	
+
+</view>

@@ -1,0 +1,81 @@
+/* pages/information/index.wxss */
+.infoContainer {
+	background-color: #1c319c;
+	color: #fff;
+}
+
+.topTab {
+	display: flex;
+	align-items: center;
+	height: 160rpx;
+	background-color: #1c319c;
+	font-family: "阿";
+	font-size: 55rpx;
+}
+.scheduleTab {
+	margin-left: 100rpx;
+	box-sizing: border-box;
+	border-bottom: 3px solid rgba(4, 255, 25, 0);
+
+}
+.organizationTab {
+	margin-left: 100rpx;
+
+	border-bottom: 3px solid rgb(255, 255, 255);
+
+}
+.contentContainer {
+	background-color: #fff;
+	border-radius: 39rpx;
+	padding: 0rpx 25rpx 100rpx; 
+	box-sizing: border-box;
+
+}
+/* .organization {
+	color: blue;
+} */
+.organizationContent {
+	color: #1c319c;
+	font-family: "阿";
+}
+.expendAndTitle {
+	display: flex;
+	align-items: center;
+	font-size: 38rpx;
+	padding: 50rpx 0 35rpx;
+}
+.expend {
+	margin-right: 10rpx;
+}
+.title {
+	background: linear-gradient(to bottom,#3368c7,#0bb7fd);
+	height: 57rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25rpx;
+	color: #fff;
+	padding: 0 68rpx;
+	box-sizing: border-box;
+}
+.organizationText {
+	color: #000;
+	
+}
+.blackText {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20rpx;
+	font-size: 33rpx;
+}
+.blueText {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #58bfff;
+	margin-bottom: 20rpx;
+	font-size: 33rpx;
+
+
+}
