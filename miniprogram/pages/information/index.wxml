@@ -6,7 +6,18 @@
 	</view>
 
 	<view class="contentContainer">
-		<view class="schedule" wx:if="{{schedule}}"></view>
+    
+		<view class="schedule" wx:if="{{schedule}}" >
+      <view class="title0">日程概览</view>
+      <view class="schedulePic0" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/%E6%97%A5%E7%A8%8B%E6%A6%82%E8%A7%88.jpg?sign=98592f557ac28312afa424c305f5fc8e&t=1698288084');"></view>
+      <view class="title1">大会报告日程</view>
+      <view class="schedulePic1" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/%E5%A4%A7%E4%BC%9A%E6%8A%A5%E5%91%8A%E6%97%A5%E7%A8%8B1028.jpg?sign=d3e95402ea752ba4f3603ba040abace5&t=1698470862');"></view>
+      <view class="title2">10月28日专题论坛日程</view>
+      <view class="schedulePic2" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/%E4%B8%93%E9%A2%98%E8%AE%BA%E5%9D%9B%E6%97%A5%E7%A8%8B28.jpg?sign=caf1f6d2d9c6d014fb12afb0e0c4ff15&t=1698288095');"></view>
+      <view class="title3">10月29日专题论坛日程</view>
+      <view class="schedulePic3" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/%E4%B8%93%E9%A2%98%E8%AE%BA%E5%9D%9B%E6%97%A5%E7%A8%8B.jpg?sign=81c1dbcadb1c136664c80204aee15732&t=1698288108');"></view>
+      <view class="tothetop" bindtap="toTheTop" wx:if="{{ifBottom}}">⇧</view>
+    </view>
 
 		<view class="organization" wx:if="{{!schedule}}">
 
@@ -32,7 +43,7 @@
 				</view>
 				<view class="organizationText" wx:if='{{expend}}'>中国自动化学会、湖州市人民政府</view>
 			</view> -->
-
+      <view class="tothetop" bindtap="toTheTop" wx:if="{{ifBottom}}">⇧</view>
 		</view>
 
 	</view>

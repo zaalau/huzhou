@@ -5,9 +5,32 @@ Page({
      * 页面的初始数据
      */
     data: {
-      schedule:false,
-      organization:true,
+      ifBottom:false,
+      schedule:true,
+      organization:false,
       expend:false,
+      scheduleContent:[
+        {
+          title:'日程概览',
+          expend:false,
+          picSrc:'https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/%E6%97%A5%E7%A8%8B%E6%A6%82%E8%A7%88.jpg?sign=68ac5b4ec7c068041bd96cf2fee9bede&t=1698231376'
+        },
+        {
+          title:'大会报告日程',
+          expend:false,
+          picSrc:'https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/%E5%A4%A7%E4%BC%9A%E6%8A%A5%E5%91%8A%E6%97%A5%E7%A8%8B.jpg?sign=d23eb1652de59087ecd12ffedd8610b6&t=1698231911'
+        },
+        {
+          title:'10月28日专题论坛日程',
+          expend:false,
+          picSrc:'https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/%E4%B8%93%E9%A2%98%E8%AE%BA%E5%9D%9B%E6%97%A5%E7%A8%8B28.jpg?sign=3551d8757fda0fbba6f52f07f921270c&t=1698232074'
+        },
+        {
+          title:'10月29日专题论坛日程',
+          expend:false,
+          picSrc:'https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/%E4%B8%93%E9%A2%98%E8%AE%BA%E5%9D%9B%E6%97%A5%E7%A8%8B.jpg?sign=f9506758d35e32c73bafba264af30f72&t=1698232090'
+        },
+      ],
       organizationContent:[
         { 
           type:'black',
@@ -44,16 +67,8 @@ Page({
               text2:'（湖南大学）',
             },
             {
-              text:'机器人视觉感知与控制技术国家工程研究中心',
-              text2:'（湖南大学）',
-            },
-            {
               text:'计算机辅助设计与图形系统全国重点实验室',
               text2:'（浙江大学）',
-            },
-            {
-              text:'机器人视觉感知与控制技术国家工程研究中心',
-              text2:'（湖南大学）',
             },
             {
               text:'机器人学国家重点实验室',
@@ -121,6 +136,9 @@ Page({
             },
             {
               text:'北京华航唯实机器人科技股份有限公司',
+            },
+            {
+              text:'湖州工业控制技术研究院',
             },
 
           ]
@@ -264,7 +282,10 @@ Page({
               text:'鲁仁全、夏元清、华长春、方勇纯、贾廷纲'
             },
             {
-              text:'杨建军、钱卫东、孙彦广、田正宏、王晓霖'
+              text:'杨建军、钱卫东、孙彦广、刘亚芳、田正宏'
+            },
+            {
+              text:'王晓霖'
             },
           ]
         },
@@ -284,7 +305,7 @@ Page({
           title:'副主席：',
           text: [
             {
-              text:'柴天佑、王天然、桂卫华、钱锋、陈杰'
+              text:'柴天佑、王天然、桂卫华、钱 锋、陈 杰'
             },
             {
               text:'王耀南、管晓宏、段广仁、谭建荣、杨华勇'
@@ -330,7 +351,7 @@ Page({
               text:'苏宏业、杜文莉、阳春华、于海斌、丁进良'
             },
             {
-              text:'赵  骥、王  伟、周昆、孙  健、刘  丁'
+              text:'赵  骥、王  伟、周 昆、孙  健、刘  丁'
             },
             {
               text:'华长春、曾志刚、董海荣、孙彦广、宋晓明'
@@ -346,127 +367,127 @@ Page({
           title:'委员：',
           text: [
             {
-              text:'郭强、何安瑞、荆丰伟、彭功状、彭开香'
+              text:'安  豆、白玉磊、白振华、包珂申、蔡昕烨'
             },
             {
-              text:'邵健、肖雄、杨荃、张瀚文、张勇军'
+              text:'曹建福、曾  鹏、柴  利、陈  辞、陈国梁'
             },
             {
-              text:'蔡昕烨、韩中洋、康强、刘全利、隋天举'
+              text:'陈积明、陈立平、陈  曦、陈晓方、陈晓武'
             },
             {
-              text:'孙希明、王东、王天宇、赵珺、庄严'
+              text:'陈志文、程  鹏、代学武、邓  方、翟庆明'
             },
             {
-              text:'代学武、丁进良、高伟男、李渝哲、李智'
+              text:'丁进良、丁伟利、董 博、杜胜利、杜文莉'
             },
             {
-              text:'刘强、刘腾飞、王笑波、杨涛、周平'
+              text:'方  浩、方  遒、房小兆、冯恩波、冯  运'
             },
             {
-              text:'柴利、陈积明、程鹏、黄文君、苏宏业'
+              text:'甘明刚、高国光、高曙明、高伟男、戈黎红'
             },
             {
-              text:'孙优贤、王文海、王亚卡、徐赤、杨春节'
+              text:'顾  锞、郭海博、郭  楠、郭  强、郭  宇'
             },
             {
-              text:'白玉磊、陈辞、董博、房小兆、黄旭民'
+              text:'郭增军、韩德强、韩红桂、韩中洋、何安瑞'
             },
             {
-              text:'康嘉文、赖冠宇、孙为军、杨祖元、钟伟锋'
+              text:'胡  兵、胡文山、华长春、黄科科、黄伟超'
             },
             {
-              text:'高国光、兰文华、李春富、李戎、李昱'
+              text:'黄文君、黄旭民、贾  超、江一鸣、姜沛林'
             },
             {
-              text:'梁琼、孙继超、叶萌、翟庆明、朱珂'
+              text:'蒋朝辉、焦尚彬、金自立、荆丰伟、康嘉文'
             },
             {
-              text:'包珂申、杜文莉、冯恩波、侍洪波、宋冰'
+              text:'康  强、赖冠宇、兰文华、雷  娜、李春富'
             },
             {
-              text:'唐漾、王峰、王长明、杨明磊、钟伟民'
+              text:'李东鹤、李  栋、李繁飙、李  辉、李  清'
             },
             {
-              text:'方遒、冯运、江一鸣、梁桥康、欧阳博'
+              text:'李  戎、李文静、李文鹏、李晓刚、李勇刚'
             },
             {
-              text:'彭伟星、谭浩然、谢核、颜志、袁礼伟'
+              text:'李渝哲、李  昱、李  智、李仲衡、梁莉莉'
             },
             {
-              text:'张辉、曾鹏、金自立、李  栋、刘卫鹏'
+              text:'梁桥康、梁  琼、刘  涵、刘检华、刘  进'
             },
             {
-              text:'刘意杨、潘福成、彭  松、王  旭、王军义'
+              text:'刘  强、刘全利、刘  爽、刘腾飞、刘  烃'
             },
             {
-              text:'杨  旭、赵吉斌、陈立平、高曙明、雷娜'
+              text:'刘卫鹏、刘意杨、刘  勇、刘玉生、刘振宇'
             },
             {
-              text:'刘检华、刘玉生、刘振宇、宋学官、陶飞'
+              text:'芦  华、罗  毅、骆德欢、马  寰、马  锴'
             },
             {
-              text:'童若锋、徐岗、黄伟超、焦尚彬、梁莉莉'
+              text:'马小博、蒙  西、穆凌霞、欧阳博、潘福成'
             },
             {
-              text:'刘涵、穆凌霞、尚婷、王文卿、吴亚丽'
+              text:'庞中华、裴文良、彭功状、彭开香、彭  松'
             },
             {
-              text:'辛菁、杨延西、李清、张和明、贾超'
+              text:'彭伟星、齐  亮、钱卫东、乔俊飞、秦凯运'
             },
             {
-              text:'李文鹏、苏伟、于秀明、张旸旸、郭海博'
+              text:'尚  婷、邵  健、沈  超、沈  俊、沈玉玲'
             },
             {
-              text:'郭宇、姜沛林、李仲衡、罗毅、佟德辉'
+              text:'侍洪波、宋  冰、宋学官、苏宏业、苏  伟'
             },
             {
-              text:'王志、张雪涛、赵彦龙、郑帅、陈晓武'
+              text:'苏  洲、隋天举、孙  备、孙继超、孙  健'
             },
             {
-              text:'胡兵、李辉、骆德欢、钱卫东、秦凯运'
+              text:'孙为军、孙希明、孙优贤、谭浩然、汤  健'
             },
             {
-              text:'陶钧、吴毅平、徐端、杨海荣、戈黎红'
+              text:'唐  漾、陶  飞、陶  钧、佟德辉、童若锋'
             },
             {
-              text:'刘进、芦华、马寰、齐亮、沈俊、沈玉玲'
+              text:'王  鼎、王  东、王  峰、王  钢、王军义'
             },
             {
-              text:'王庆东、王少波、钟瑾、安豆、曹建福'
+              text:'王庆东、王少波、王天宇、王文海、王文卿'
             },
             {
-              text:'韩德强、李东鹤、刘烃、马小博、沈超'
+              text:'王晓鹏、王笑波、王  旭、王雅琳、王亚卡'
             },
             {
-              text:'苏洲、杨清宇、张萌、白振华、丁伟利'
+              text:'王长明、王 志、吴亚丽、吴毅平、肖 雄'
             },
             {
-              text:'郭增军、华长春、李晓刚、刘  爽、马  锴'
+              text:'谢 核、辛 菁、徐  赤、徐  端、徐  岗'
             },
             {
-              text:'裴文良、甄  然、周  磊、俞立、张文安'
+              text:'颜  志、杨春节、杨翠丽、杨海荣、杨明磊'
             },
             {
-              text:'杜胜利、顾锞、郭楠、韩红桂、李文静'
+              text:'杨秦敏、杨清宇、杨  荃、杨荣妮、杨  涛'
             },
             {
-              text:'蒙西、乔俊飞、汤健、王鼎、杨翠丽'
+              text:'杨  旭、杨延西、杨祖元、叶  萌、于秀明'
             },
             {
-              text:'陈晓方、陈志文、黄科科、蒋朝辉、李繁飙'
+              text:'俞  立、袁礼伟、袁小锋、张瀚文、张和明'
             },
             {
-              text:'李勇刚、孙备、王雅琳、袁小锋、周灿'
+              text:'张  辉、张  萌、张文安、张雪涛、张旸旸'
             },
             {
-              text:'陈国梁、邓方、方浩、甘明刚、胡文山'
+              text:'张勇军、赵吉斌、赵  珺、赵彦龙、甄  然'
             },
             {
-              text:'庞中华、孙健、王钢、王晓鹏、杨荣妮'
+              text:'郑  帅、钟  瑾、钟伟锋、钟伟民、周  灿'
             },
             {
-              text:'陈曦、杨秦敏、刘勇'
+              text:'周  磊、周  平、朱  珂、庄  严'
             },
           ]
         },
@@ -509,7 +530,7 @@ Page({
           title:'副主席：',
           text: [
             {
-              text:'柴天佑、桂卫华、钱锋、谭建荣、杨华勇'
+              text:'柴天佑、桂卫华、钱 锋、谭建荣、杨华勇'
             },
             {
               text:'王耀南、管晓宏'
@@ -549,7 +570,7 @@ Page({
           title:'大会秘书处秘书长：',
           text: [
             {
-              text:'张楠、罗芳、邓瑞龙'
+              text:'张 楠、罗 芳、邓瑞龙'
             },
           ]
         },
@@ -559,7 +580,7 @@ Page({
           title:'副秘书长：',
           text: [
             {
-              text:'王坛、贺诗波'
+              text:'王 坛、贺诗波'
             },
           ]
         },
@@ -569,7 +590,7 @@ Page({
           title:'大会总务处总务长：',
           text: [
             {
-              text:'杨倩、潘良'
+              text:'杨 倩、潘 良'
             },
           ]
         },
@@ -579,25 +600,28 @@ Page({
           title:'副总务长：',
           text: [
             {
-              text:'章颢缤、喻洁、林庆'
+              text:'章颢缤、喻 洁、林 庆'
             },
           ]
         },
       ]
     },
     showSchedule() {
+      wx.vibrateShort()
       this.setData({
         schedule:true,
         organization:false
       })
     },
     showOrganization() {
+      wx.vibrateShort()
       this.setData({
         organization:true,
         schedule:false
       })
     },
     ifExpend(e) {
+      wx.vibrateShort()
       const index = e.currentTarget.dataset.index
       const organizationContent = this.data.organizationContent
       const newOrganizationContent = organizationContent.map((v,i) => {
@@ -616,7 +640,25 @@ Page({
         organizationContent: newOrganizationContent
       })
     },
-    
+    toTheTop() {
+      wx.vibrateShort()
+      wx.pageScrollTo({
+        scrollTop:0,
+        duration:500
+      })
+    },
+    onPageScroll: function(e) {
+      
+      if(e.scrollTop > 150) {
+        this.setData({
+          ifBottom: true
+        })
+      } else {
+        this.setData({
+          ifBottom: false
+        })
+      }
+  },
     /**
      * 生命周期函数--监听页面加载
      */

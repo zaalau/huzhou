@@ -28,13 +28,19 @@
 	background-color: #fff;
 	border-radius: 39rpx;
 	padding: 0rpx 25rpx 100rpx; 
-	box-sizing: border-box;
+  box-sizing: border-box;
+  height: 1290rpx;
+}
+.saleListPic {
+  width: 100%;
+  height: 955rpx;
+  margin-top: 80rpx;
 }
 
 .contentContainer2 {
 	background-color: #fff;
 	border-radius: 39rpx;
-	padding: 40rpx 25rpx 40rpx; 
+	padding: 40rpx 25rpx 180rpx; 
 	box-sizing: border-box;
 	color: black;
 	font-family: "阿";
@@ -55,7 +61,32 @@
 	margin-bottom: 20rpx;
 }
 .picTitle {
-	font-size: 40rpx;
-	margin-bottom: 30rpx;
-	margin-left: 40rpx;
+  font-size: 40rpx;
+	margin: 40rpx auto 80rpx;
+  background: linear-gradient(to bottom,#3368c7,#0bb7fd);
+	height: 57rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25rpx;
+	color: #fff;
+	/* padding: 0 68rpx; */
+  box-sizing: border-box;
+  width: 300rpx;
+}
+.tothetop {
+  border-radius: 100rpx;
+  height: 80rpx;
+  width: 80rpx;
+  /* border: 2px solid rgba(0, 0, 0, 0.486); */
+  border: 2px solid #000000;
+  color: #000000;
+  font-size: 60rpx;
+  position: fixed;
+  right: 40rpx;
+  bottom: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: rgba(0, 0, 0, 0.486); */
 }

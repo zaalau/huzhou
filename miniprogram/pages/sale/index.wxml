@@ -7,18 +7,19 @@
 
 	<view class="contentContainer" wx:if="{{list}}">
 		<view class="list">
-			
+			<image class="saleListPic" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG75.jpg?sign=ca9414beaf5d070853712ed328174023&t=1698199704" mode=""/>
 		</view>
 
-	</view>
+	</view> 
 
 	<view class="contentContainer2" wx:if="{{!list}}">
 		<view class="picTitle">展会区分布</view>
 		<image class="pic1" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG93.jpg?sign=a117b0326d29277d31e40aaa0b3f7d79&t=1697971947" mode=""/>
 		<view class="picTitle">A厅展会区</view>
-		<image class="pic2" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG3138.jpg?sign=4a95720d29ddeef6946459a47ffeb6fe&t=1698126167" mode=""/>
+		<image class="pic2" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG1438.jpg?sign=35a7fceb5587c41084decc86265bfdc5&t=1698244415" mode=""/>
 		<view class="picTitle">长廊展会区</view>
 		<image class="pic3" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG94.jpg?sign=321bf9af7bb60ea5f5bfd32bdf94b27b&t=1697971972" mode=""/>
+    <view class="tothetop" bindtap="toTheTop" wx:if="{{ifBottom}}">⇧</view>
 	</view>
 
 </view>

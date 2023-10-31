@@ -46,7 +46,6 @@
 }
 .contentContainer3 {
 	background-color: #fff;
-	height: 1400rpx; 
 	padding: 30rpx 0;
 	border-radius: 39rpx;
 }
@@ -102,11 +101,23 @@
 .pic2 {
 	width: 700rpx;
 	height: 513rpx;
-	margin: 0 0 40rpx 25rpx;
+	margin: 0 0 0rpx 25rpx;
 }
 .picTitle {
+  background: linear-gradient(to bottom,#3368c7,#0bb7fd);
+  width: 360rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 	font-size: 40rpx;
-	margin-bottom: 30rpx;
-	margin-left: 40rpx;
-	color: black;
+  margin: 20rpx auto 30rpx;
+  border-radius: 25rpx;
+}
+.smallTitle {
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50rpx;
 }

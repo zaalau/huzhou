@@ -9,26 +9,31 @@ Page({
     },
 
     toInfo() {
+        wx.vibrateShort()
         wx.navigateTo({
             url: '../information/index',
           })
     },
     toDoc() {
+        wx.vibrateShort()
         wx.navigateTo({
             url: '../doctor/index',
           })
     },
     toSale() {
+        wx.vibrateShort()
         wx.navigateTo({
             url: '../sale/index',
           })
     },
     toMap() {
+        wx.vibrateShort()
         wx.navigateTo({
             url: '../map/index',
           })
     },
     toLive() {
+        wx.vibrateShort()
         wx.navigateTo({
             url: '../live/index',
           })

@@ -7,20 +7,43 @@ Page({
   data: {
     saleContainerHeight: '',
     list: true,
+    ifBottom: false
+
 
   },
   showlist() {
+    wx.vibrateShort()
     this.setData({
       list: true,
       pic: false
     })
   },
   showPic() {
+    wx.vibrateShort()
     this.setData({
       pic: true,
       list: false
     })
   },
+  toTheTop() {
+    wx.vibrateShort()
+    wx.pageScrollTo({
+      scrollTop:0,
+      duration:500
+    })
+  },
+  onPageScroll: function(e) {
+    
+    if(e.scrollTop > 150) {
+      this.setData({
+        ifBottom: true
+      })
+    } else {
+      this.setData({
+        ifBottom: false
+      })
+    }
+},
   /**
    * 生命周期函数--监听页面加载
    */

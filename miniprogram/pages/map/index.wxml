@@ -7,7 +7,7 @@
 	</view> 
 
 	<view class="contentContainer" wx:if="{{car}}">
-		<view class="car" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG75.jpg?sign=4b31dacc6a7ec7d746d85781334dc665&t=1697875920');">
+		<view class="car" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG44.jpg?sign=bf8190e02ab83debcc0530d276456b1b&t=1698205253');">
 		</view>
 	</view>
 	<view class="contentContainer2" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG78.jpg?sign=a0d16de5a3791e1515a5592e5060c670&t=1697879625');" wx:if="{{dinner}}">
@@ -29,10 +29,11 @@
 	<view class="contentContainer3" wx:if="{{place}}" >
 		
 			<view class="picTitle">主会场平面图</view>
-			<image class="pic1" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG98.jpg?sign=27dad55096305c1eb26114f0ebb45dad&t=1697977846" mode=""/>
-			<view class="picTitle">分会场平面图</view>
+			<image class="pic1" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG503.jpg?sign=12b741293e576c7c077545c642d48b52&t=1698245969" mode=""/>
+			<view class="smallTitle">太湖龙之梦会议中心 3层</view>
+      <view class="picTitle">分会场平面图</view>
 			<image class="pic2" src="https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG2743.jpg?sign=1636b6d87d661daf88902a353afef0d5&t=1697977824" mode=""/>
-	
+      <view class="smallTitle">太湖龙之梦瑞峰国际大酒店 福田厅、天河厅</view>
 
 	</view>
 

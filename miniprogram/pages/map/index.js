@@ -13,9 +13,7 @@ Page({
                 {
                     timeTitle:'18：00-20:00自助晚餐',
                     text:[
-                        {
-                            text:'龙之梦瑞峰国际大酒店广州楼2楼莲花厅'
-                        },
+                        
                         {
                             text:'龙之梦瑞峰国际大酒店广州楼28楼白云自助餐厅'
                         }
@@ -65,9 +63,7 @@ Page({
                 {
                     timeTitle:'18：00-20：00自助晚餐',
                     text:[
-                        {
-                            text:'龙之梦瑞峰国际大酒店广州楼2楼莲花厅'
-                        },
+                        
                         {
                             text:'龙之梦瑞峰国际大酒店广州楼28楼白云自助餐厅'
                         }
@@ -75,9 +71,12 @@ Page({
                 }
             ], 
         },
-    ]
+    ],
+
   },
+  
   showCar() {
+    wx.vibrateShort()
     this.setData({
       car: true,
       dinner: false,
@@ -85,6 +84,7 @@ Page({
     })
   },
   showDinner() {
+    wx.vibrateShort()
     this.setData({
         car: false,
         dinner: true,
@@ -92,6 +92,7 @@ Page({
     })
   },
   showPlace() {
+    wx.vibrateShort()
     this.setData({
         car: false,
         dinner: false,

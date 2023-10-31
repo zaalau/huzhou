@@ -2,13 +2,29 @@
 <view class="doctorContainer" style=" height: {{doctorContainerHeight}}px;">
 
 	<view class="topTab">
-		<view class="confTab" bindtap='showConf' style="border-bottom: {{conf? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{conf? '#fff' : '#ffffff90'}};">大会报告人</view>
-		<view class="topicTab" bindtap='showTopic' style="border-bottom: {{!conf? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{!conf? '#fff' : '#ffffff90'}};">专题报告人</view>
+		<view class="confTab" bindtap='showConf' style="border-bottom: {{conf? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{conf? '#fff' : '#ffffff90'}};">大会报告</view>
+		<view class="topicTab" bindtap='showTopic' style="border-bottom: {{!conf? '3px solid rgb(255, 255, 255)' : '3px solid rgba(4, 255, 25, 0)'}}; color: {{!conf? '#fff' : '#ffffff90'}};">专题报告</view>
 	</view>
 
 	<view class="contentContainer" wx:if="{{conf}}">
 		<view class="conf">
-			
+			<view class="confContainer" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG126.jpg?sign=2c9e0049b42c0dc0c1d8582794350066&t=1698229943');">
+      <view class="flexContainer">
+        <view class="confContentContainer" wx:for="{{confDoc}}" wx:for-item="item" wx:for-index='index' wx:key="index" data-big="{{item.big}}" wx:if="{{item.type==='28'}}" bindtap="preview" style="background-image: url({{item.small}});"></view>
+        
+       
+       
+      </view>
+      <view class="flexContainer2">
+        <view class="confContentContainer" wx:for="{{confDoc}}" wx:for-item="item2" wx:for-index='index2' wx:key="index2" data-big="{{item2.big}}" wx:if="{{item2.type==='29'}}" bindtap="preview" style="background-image: url({{item2.small}});"></view>
+       
+        
+        
+      </view>
+        
+
+      
+      </view>
 		</view>
 
 	</view>
@@ -19,10 +35,10 @@
 					<view class="expend">{{item.expend? '-' : '+'}}</view>
 					<view class="title">{{item.title}}</view>
 			</view>
-			<image class="topicPic" wx:if="{{item.expend}}" src="{{item.picSrc}}" mode=""/>
+			<image class="topicPic to{{index}}"  wx:if="{{item.expend}}" src="{{item.picSrc}}" mode=""/>
 			
 		</view>
-		
+		<view class="tothetop" bindtap="toTheTop" wx:if="{{ifBottom}}">⇧</view>
 	</view>
 
 </view>

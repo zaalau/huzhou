@@ -1,5 +1,5 @@
 <!--pages/home/index.wxml-->
-<view class="homeContainer" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG2267.jpg?sign=5f671cd3d0a348f62820e2035a89843c&t=1697783442'); height: {{homeContainerHeight}}px;">
+<view class="homeContainer" style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG2267.jpg?sign=5f671cd3d0a348f62820e2035a89843c&t=1697783442'); min-height: {{homeContainerHeight}}px;">
 	<view class="info" bindtap='toInfo' style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG16.jpg?sign=768280bdab9f6736f5fa62f8be301cdc&t=1697783457');">会议信息</view>
 	<view class="doc" bindtap='toDoc' style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG17.jpg?sign=d2b8450fef6d2c44aa1cd642bc4d63ba&t=1697784238');">报告人介绍</view>
 	<view class="sale" bindtap='toSale' style="background-image: url('https://636c-cloud1-2g8e8bgqa13910e9-1321771972.tcb.qcloud.la/WechatIMG21.jpg?sign=ab174fd76bc56beccfb163e4a8e045d7&t=1697784338');">展商介绍</view>
